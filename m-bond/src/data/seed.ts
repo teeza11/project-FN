@@ -66,15 +66,13 @@ export const seedDocs = (t: Template[]): BondDoc[] => {
   ];
 };
 
-/** บัญชีทดลอง: ชื่อผู้ใช้ (email) เป็นชื่อ Role และรหัสผ่านทุกบัญชีคือ "pass" */
+/** บัญชีทดลอง: ใช้ชื่อ Role เป็นชื่อผู้ใช้ และรหัสผ่านทุกบัญชีคือ "pass" */
 export const seedUsers = (): AppUser[] => [
-  { n: "สมชาย ใจดี", email: "admin", r: "admin", on: true },
-  { n: "สุดา รักงาน", email: "reviewer", r: "reviewer", on: true },
-  { n: "ธนา มั่นคง", email: "document", r: "document", on: true },
-  { n: "ปรีชา เจ้าของกิจการ", email: "company", r: "company", co: COMPANIES[0], on: true },
-  { n: "มานี ตัวแทน yyy", email: "company2", r: "company", co: COMPANIES[1], on: true },
-  { n: "วิภา ตรวจดี", email: "reviewer2", r: "reviewer", on: true },
-  { n: "อนุชา ใหม่", email: "document2", r: "document", on: false },
+  { n: "ธนโชติ แก้วชูฟอง", email: "admin", r: "admin", on: true },
+  { n: "ภาคิน แซ่สือ", email: "reviewer", r: "reviewer", on: true },
+  { n: "พิสิษฐ์ กาญจนเรืองเด่น", email: "reviewer2", r: "reviewer", on: true },
+  { n: "ชญามิน อาวรวาน", email: "document", r: "document", on: true },
+  { n: "ธนธรณ์ ตั๊งสมบูรณ์", email: "user", r: "company", co: COMPANIES[0], on: true },
 ];
 
 export const seedInvites = (): Invite[] => [
@@ -82,10 +80,10 @@ export const seedInvites = (): Invite[] => [
 ];
 
 export const seedLogs = (): LogEntry[] => [
-  { t: todayAt(10, 5), u: "วิภา ตรวจดี", a: "ส่งกลับ DB-004: ขาดมติที่ประชุม", c: "doc" },
-  { t: todayAt(9, 40), u: "สุดา รักงาน", a: "ออก Version ใหม่ TPL-01", c: "tpl" },
-  { t: todayAt(9, 12), u: "ธนา มั่นคง", a: "ส่งตรวจ DB-002", c: "doc" },
-  { t: "18 ธ.ค. 2568 16:40", u: "วิภา ตรวจดี", a: "เผยแพร่ DB-006 v2", c: "doc" },
+  { t: todayAt(10, 5), u: "พิสิษฐ์ กาญจนเรืองเด่น", a: "ส่งกลับ DB-004: ขาดมติที่ประชุม", c: "doc" },
+  { t: todayAt(9, 40), u: "ภาคิน แซ่สือ", a: "ออก Version ใหม่ TPL-01", c: "tpl" },
+  { t: todayAt(9, 12), u: "ชญามิน อาวรวาน", a: "ส่งตรวจ DB-002", c: "doc" },
+  { t: "18 ธ.ค. 2568 16:40", u: "พิสิษฐ์ กาญจนเรืองเด่น", a: "เผยแพร่ DB-006 v2", c: "doc" },
 ];
 
 export const seedDeleted = (): DeletedDoc[] => [];

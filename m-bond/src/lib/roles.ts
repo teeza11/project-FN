@@ -39,7 +39,7 @@ export const ROLES: Record<Role, RoleConfig> = {
     ],
   },
   company: {
-    id: "company", name: "user (company)", desc: "บริษัทผู้เสนอตราสารหนี้", base: "/company",
+    id: "company", name: "user", desc: "บริษัทผู้เสนอตราสารหนี้", base: "/company",
     nav: [
       { href: "/company", label: "หน้าหลัก" },
       { href: "/company/templates", label: "เทมเพลตเอกสาร" },
